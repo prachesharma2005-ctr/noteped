@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marks Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Math Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="background">
-        <div class="container">
-            <div class="box">
-                <form class="Calculate-form"  id="CalculateForm"  onsubmit="Calculatemarks(Event)">
-                    <input type="number"  required    min="0"  max="100"    name="maths" placeholder="maths">
-                     <input type="number"  required  min="0"  max="100"    name="english" placeholder="english">
-                      <input type="number"  required  min="0"  max="100"    name="hindi" placeholder="hindi">
-                       <input type="number"  required  min="0"  max="100"    name="science" placeholder="science">
-                       <button type="submit"  class="s"> Calculate</button>
-                
-                    </form>
-                    <p id="result"  class="result"></p>
-            </div>
-            <div class="contant">
-            <h2>Calculate your</h2>
-            <h1>percentage</h1>
-        </div>
-        </div>
-        
-    </div>
-    <script src="marks.js"></script>
-</body>
+  <div class="quiz-container">
+    <h1>Math Quiz</h1>
+    <div id="question"></div>
+    <input type="number" id="answer" placeholder="Your answer" />
+    <button onclick="checkAnswer()">Submit</button>
+    <div id="result"></div>
+    <div id="score">Score: 0</div>
+  </div>
 
+  <script src="math.js"></script>
+</body>
 </html>
