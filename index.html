@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Password Generator</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h2>🔐 Password Generator</h2>
-
-    <div class="result-container">
-      <input type="text" id="result" readonly />
-      <button id="copy" title="Copy to clipboard">📋</button>
-    </div>
-
-    <div class="settings">
-      <label>Password Length:
-        <input type="number" id="length" min="4" max="30" value="12" />
-      </label>
-
-      <label><input type="checkbox" id="uppercase" checked /> Include Uppercase</label>
-      <label><input type="checkbox" id="lowercase" checked /> Include Lowercase</label>
-      <label><input type="checkbox" id="numbers" checked /> Include Numbers</label>
-      <label><input type="checkbox" id="symbols" /> Include Symbols</label>
-    </div>
-
-    <button id="generate">Generate Password</button>
+    <h1>QR Code Generator</h1>
+    <input type="text" id="text" placeholder="Enter text or URL">
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qrcode"></div>
   </div>
 
-  <script src="password.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="QR.js"></script>
 </body>
 </html>
