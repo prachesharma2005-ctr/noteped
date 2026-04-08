@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Product Search & Filter</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITHUB PROFILE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Product Search & Filter</h1>
+    <div  class="container">
+        <h1>Search GITHUB profile</h1>
+        <div class="search">
+            <input type="text"  name="searchInput" placeholder="enter your GITHUB profile">
+            <button class="Primary_btn">search</button>
+        </div>
+        <div class="search"></div>
+        <div class="loading"></div>
 
-    <div class="filters">
-      <input type="text" id="searchInput" placeholder="Search products..." />
-      <select id="categoryFilter">
-        <option value="">All Categories</option>
-      </select>
+
     </div>
+    <script src="pro.js"></script>
 
-    <div id="productList" class="product-list"></div>
-  </div>
-
-  <script src="fetch.js"></script>
 </body>
+
 </html>
