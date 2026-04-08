@@ -1,52 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   margin: 0;
   padding: 40px;
-  display: flex;
-  justify-content: center;
 }
 
 .container {
+  background: white;
+  padding: 30px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
   text-align: center;
 }
 
-.palette {
+.balance {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.summary {
   display: flex;
-  justify-content: center;
-  margin: 30px 0;
-  gap: 10px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.color {
-  width: 120px;
-  height: 120px;
-  border-radius: 8px;
-  position: relative;
-  cursor: pointer;
-  transition: transform 0.2s;
+.money {
+  font-size: 18px;
+  margin-top: 5px;
 }
 
-.color:hover {
-  transform: scale(1.05);
+.plus {
+  color: green;
 }
 
-.color span {
-  position: absolute;
-  bottom: 8px;
-  left: 0;
+.minus {
+  color: red;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  border-right: 5px solid;
+  margin-bottom: 10px;
+}
+
+.list li.plus {
+  border-color: green;
+}
+
+.list li.minus {
+  border-color: red;
+}
+
+form input {
   width: 100%;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 5px 0;
-  font-size: 14px;
+  padding: 10px;
+  margin: 5px 0;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
   cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background: #555;
 }
