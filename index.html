@@ -4,24 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GITHUB PROFILE</title>
+    <title>Marks Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div  class="container">
-        <h1>Search GITHUB profile</h1>
-        <div class="search">
-            <input type="text"  name="searchInput" placeholder="enter your GITHUB profile">
-            <button class="Primary_btn">search</button>
+    <div class="background">
+        <div class="container">
+            <div class="box">
+                <form class="Calculate-form"  id="CalculateForm"  onsubmit="Calculatemarks(Event)">
+                    <input type="number"  required    min="0"  max="100"    name="maths" placeholder="maths">
+                     <input type="number"  required  min="0"  max="100"    name="english" placeholder="english">
+                      <input type="number"  required  min="0"  max="100"    name="hindi" placeholder="hindi">
+                       <input type="number"  required  min="0"  max="100"    name="science" placeholder="science">
+                       <button type="submit"  class="s"> Calculate</button>
+                
+                    </form>
+                    <p id="result"  class="result"></p>
+            </div>
+            <div class="contant">
+            <h2>Calculate your</h2>
+            <h1>percentage</h1>
         </div>
-        <div class="search"></div>
-        <div class="loading"></div>
-
-
+        </div>
+        
     </div>
-    <script src="pro.js"></script>
-
+    <script src="marks.js"></script>
 </body>
 
 </html>
